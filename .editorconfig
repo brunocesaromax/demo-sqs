@@ -1,0 +1,41 @@
+# EditorConfig para projetos Java
+# https://editorconfig.org/
+
+# Configuração de nível superior para todos os arquivos
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Configurações específicas para arquivos Java
+[*.java]
+max_line_length = 120
+
+# Configurações para arquivos XML (comuns em projetos Java)
+[*.xml]
+indent_size = 2
+
+# Configurações para arquivos de propriedades
+[*.properties]
+charset = latin1
+
+# Configurações para arquivos Markdown
+[*.md]
+trim_trailing_whitespace = false
+
+# Configurações para arquivos YAML (como configurações do Maven ou Gradle)
+[*.{yml,yaml}]
+indent_size = 2
+
+# Configurações para arquivos de script shell
+[*.sh]
+end_of_line = lf
+
+# Configurações para arquivos batch do Windows
+[*.bat]
+end_of_line = crlf
